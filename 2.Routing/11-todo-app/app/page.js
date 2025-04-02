@@ -1,5 +1,5 @@
 'use client'
-
+// run  npm install -g json-server
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
     .then(()=> getAll())
   }
 
-  useEffect(()=> {
+  useEffect(()=> {// run once at the beginning
     getAll();
   },[])
 

@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children, auth }) {
-  return (
+  return (// auth ve root çağrıldı.
     <html lang="en">
       <body className={inter.className}>
         <Link href="/login">Login</Link>
