@@ -7,8 +7,8 @@ export default function SortProducts() {
 
 
     function updateSorting(sortOrder) {
-        const params = new URLSearchParams(searchParams.toString());
-        params.set("sort", sortOrder);
+        const params = new URLSearchParams(searchParams.toString());//mevcut değeri alır
+        params.set("sort", sortOrder);//parametreden gelen değeri atar
         window.history.pushState(null, '', `?${params.toString()}`)
     }
 
@@ -17,5 +17,5 @@ export default function SortProducts() {
             <button onClick={() => updateSorting('asc')}>Sort Ascending</button>
             <button onClick={() => updateSorting('desc')}>Sort Descending</button>
         </>
-    )
+    )//dizilişi değiştirir
 }
