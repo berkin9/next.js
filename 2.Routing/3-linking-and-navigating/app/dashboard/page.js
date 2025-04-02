@@ -7,7 +7,7 @@ import Loading from "./loading";
 export default function DashboardPage() {
   const [search, setSearch] = useState("");
 
-  return (
+  return (			// search bar
     <main>
      <h1>Dashboard Page</h1>  
      <input onChange={(e)=> setSearch(e.target.value)} placeholder="Search something..."/>
