@@ -1,1 +1,1 @@
-# Next.js Projesi
+#Instructive Udemy Next.js Project
